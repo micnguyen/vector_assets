@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let scaledImageView = UIImageView(image: UIImage(named: "errorFilled"))
+        scaledImageView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
+        view.addSubview(scaledImageView)
+
+        
     }
 
     override func didReceiveMemoryWarning() {
